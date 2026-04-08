@@ -10,5 +10,29 @@
 <body>
   <h1>New Age Alignment</h1>
   <p>Changing the World.<span class="accent"> Now</span>.</p>
+  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+  <label for="name">Name</label>
+  <input id="name" name="name" type="text" required>
+
+  <label for="email">Email</label>
+  <input id="email" name="email" type="email" required>
+
+  <label for="phone">Phone</label>
+  <input id="phone" name="phone" type="tel">
+
+  <label for="service">Service</label>
+  <select id="service" name="service">
+    <option value="">Please choose</option>
+    <option value="bookkeeping">Bookkeeping</option>
+    <option value="tax">Tax help</option>
+    <option value="payroll">Payroll</option>
+    <option value="consulting">Consulting</option>
+  </select>
+
+  <label for="message">Message</label>
+  <textarea id="message" name="message" rows="6" required></textarea>
+
+  <button type="submit">Send inquiry</button>
+</form>
 </body>
 </html>

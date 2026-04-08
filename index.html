@@ -10,27 +10,68 @@
 <body>
   <h1>New Age Alignment</h1>
   <p>Changing the World.<span class="accent"> Now</span>.</p>
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-  <label for="name">Name</label>
-  <input id="name" name="name" type="text" required>
+ <form
+  action="https://formspree.io/f/xnjorlld"
+  method="POST"
+  class="contact-form"
+>
+  <div class="form-row">
+    <label for="name">Name</label>
+    <input
+      type="text"
+      id="name"
+      name="name"
+      placeholder="Your name"
+      required
+    />
+  </div>
 
-  <label for="email">Email</label>
-  <input id="email" name="email" type="email" required>
+  <div class="form-row">
+    <label for="email">Email</label>
+    <input
+      type="email"
+      id="email"
+      name="email"
+      placeholder="you@example.com"
+      required
+    />
+  </div>
 
-  <label for="phone">Phone</label>
-  <input id="phone" name="phone" type="tel">
+  <div class="form-row">
+    <label for="phone">Phone</label>
+    <input
+      type="tel"
+      id="phone"
+      name="phone"
+      placeholder="+49 ..."
+    />
+  </div>
 
-  <label for="service">Service</label>
-  <select id="service" name="service">
-    <option value="">Please choose</option>
-    <option value="bookkeeping">Bookkeeping</option>
-    <option value="tax">Tax help</option>
-    <option value="payroll">Payroll</option>
-    <option value="consulting">Consulting</option>
-  </select>
+  <div class="form-row">
+    <label for="service">Service</label>
+    <select id="service" name="service" required>
+      <option value="">Please select</option>
+      <option value="bookkeeping">Bookkeeping</option>
+      <option value="payroll">Payroll</option>
+      <option value="tax-preparation">Tax preparation</option>
+      <option value="consulting">Consulting</option>
+      <option value="other">Other</option>
+    </select>
+  </div>
 
-  <label for="message">Message</label>
-  <textarea id="message" name="message" rows="6" required></textarea>
+  <div class="form-row">
+    <label for="message">Message</label>
+    <textarea
+      id="message"
+      name="message"
+      rows="6"
+      placeholder="How can I help you?"
+      required
+    ></textarea>
+  </div>
+
+  <input type="hidden" name="_subject" value="New website inquiry" />
+  <input type="hidden" name="_next" value="https://ozean64.de/thank-you.html" />
 
   <button type="submit">Send inquiry</button>
 </form>
